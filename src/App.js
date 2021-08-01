@@ -1,7 +1,12 @@
 import Slider from './Components/Slider.js';
+import GlobalState from './GlobalState.js';
 
 const App = () => {
-    return <Slider />;
+    return (
+        <GlobalState>
+            <Slider />
+        </GlobalState>
+    );
 };
 
 export default App;
